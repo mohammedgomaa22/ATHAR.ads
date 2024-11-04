@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ATHAR.ads
+    </title>
+    <meta name="description" content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة">
+    <meta name="keywords" content="نص يمكن استبداله , نص يمكن استبداله , نص يمكن استبداله">
+    <link rel="shortcut icon" href="./assets/images/1.png" type="image/x-icon">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <!-- Typedjs cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                    primary: '#003dff',
+                    secondary: '#464b51',
+                    third: '#3c76fa',
+                    light: '#89aee3',
+                }
+            }
+            }
+        }
+    </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ********** Preloader ********** -->
+    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-black to-third duration-1000">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
+    
+
+    <main>
+
+        <!-- ********** Header ********** -->
+        <header class="min-h-screen pb-40 md:pb-0 flex flex-col justify-center relative bg-gradient-to-l from-black to-third">
+            <div class="container relative">
+                <div class="md:flex flex-row-reverse gap-3 md:gap-10 justify-between items-center">
+
+                    <!-- Swiper -->
+                    <div class="swiper h-[370px] md:h-[500px] flex-1 mb-5">
+                        <div class="mySwiper w-full h-full">
+                            <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide slide-1 mb-10 content-center">
+                                    <figure class="img md:w-[350px] 2xl:w-[460px] mr-auto">
+                                        <img src="./assets/images/Videographer-amico.svg" alt="pro" width="640" height="360" class="w-full h-full">
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide slide-1 mb-10 content-center">
+                                    <figure class="img md:w-[350px] 2xl:w-[460px] mr-auto">
+                                        <img src="./assets/images/Videographer-bro.svg" alt="pro" width="640" height="360" class="w-full h-full">
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide slide-1 mb-10 content-center">
+                                    <figure class="img md:w-[350px] 2xl:w-[460px] mr-auto">
+                                        <img src="./assets/images/Videographer-pana.svg" alt="pro" width="640" height="360" class="w-full h-full">
+                                    </figure>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="info flex-1 text-center lg:text-right">
+                        <figure class="w-64 md:w-72">
+                            <img src="./assets/images/Logo-B.png" alt="Logo">
+                        </figure>
+                        <h2 class="min-h-10 text-3xl md:text-[40px] font-semibold  mb-5">
+                            <span class="text-white" id="typed_title"></span>
+                        </h2>
+                        <p class="min-h-8 text-base md:text-lg font-light text-white max-w-lg leading-[1.8]" id="typed_desc" style="line-height: 2;">
+                            
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <a href="https://wa.me/+201026053956" target="_blank" rel="noopener noreferrer" class="block mx-auto lg:mx-0 w-fit">
+                                <button class="w-32 mt-5 py-2 rounded-lg text-white bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
+                                    احتاج فيديو
+                                </button>
+                            </a>
+                            <a href="#services" rel="noopener noreferrer" class="block mx-auto lg:mx-0 w-fit">
+                                <button class="w-32 mt-5 py-2 rounded-lg text-white bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
+                                    ابعرف خدماتكم !
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1728248260">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Services -->
+
+        <section id="services" class="py-16">
+            <div class="container">
+
+                <!-- Main title -->
+                <h2 data-aos="flip-up" class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-gray-500"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-black text-white text-center leading-8">
+                        <span class="text-2xl">
+                            خـدمـاتـنـا
+                        </span>
+                        <br>
+                        <span class="text-lg font-light">
+                            Our services
+                        </span>
+                    </span>
+                    <span class="flex-grow block border-t border-gray-500"></span>
+                </h2>
+
+
+                <!-- Cards -->
+                <div class="grid gap-y-10 gap-x-5 grid-cols-1 lg:grid-cols-3">
+                    
+                    
+
+                </div>
+
+
+            </div>
+        </section>
+        
+        
+
+
+    </main>
+
+    <!-- ********** Start Footer ********** -->
+    <footer class="">
+        <div class="foot px-5 py-4 text-sm text-light bg-gradient-to-l from-black to-third">
+            <p class="w-fit mx-auto">جميع الحقوق محفوظة لموقع ATHAR.ads 2024</p>
+        </div>
+    </footer>
+    <!-- ********** End Footer ********** -->
+    
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Start JS Files -->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
