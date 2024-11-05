@@ -19,17 +19,20 @@
             theme: {
             extend: {
                 colors: {
-                    primary: '#003dff',
-                    secondary: '#464b51',
-                    third: '#3c76fa',
-                    light: '#89aee3',
+                    // primary: '#003dff',
+                    // secondary: '#464b51',
+                    // third: '#3c76fa',
+                    // light: '#89aee3',
+                    // ------------------------------
+                    primary: '#133E87',
+                    secondary: '#F3F3E0',
+                    third: '#608BC1',
+                    light: '#CBDCEB',
                 }
             }
             }
         }
     </script>
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS FILES -->
@@ -39,7 +42,7 @@
 <body>
 
     <!-- ********** Preloader ********** -->
-    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-black to-third duration-1000">
+    <!-- <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-black to-third duration-1000">
         <div class="loader">
             <div class="loader-square"></div>
             <div class="loader-square"></div>
@@ -49,13 +52,16 @@
             <div class="loader-square"></div>
             <div class="loader-square"></div>
         </div>
-    </div>
+    </div> -->
     
 
     <main>
 
         <!-- ********** Header ********** -->
-        <header class="min-h-screen pb-40 md:pb-0 flex flex-col justify-center relative bg-gradient-to-l from-black to-third">
+        <header class="min-h-screen md:pt-10 pb-40 md:pb-0 flex flex-col justify-center items-center relative bg-gradient-to-l from-black to-third">
+            <figure class="hidden md:block w-56 md:w-60">
+                <img src="./assets/images/Logo-B.png" alt="Logo">
+            </figure>
             <div class="container relative">
                 <div class="md:flex flex-row-reverse gap-3 md:gap-10 justify-between items-center">
 
@@ -99,12 +105,12 @@
                         </p>
                         <div class="flex items-center gap-4">
                             <a href="https://wa.me/+201026053956" target="_blank" rel="noopener noreferrer" class="block mx-auto lg:mx-0 w-fit">
-                                <button class="w-32 mt-5 py-2 rounded-lg text-white bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
+                                <button class="w-32 mt-5 py-2 rounded-lg text-secondary bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
                                     احتاج فيديو
                                 </button>
                             </a>
                             <a href="#services" rel="noopener noreferrer" class="block mx-auto lg:mx-0 w-fit">
-                                <button class="w-32 mt-5 py-2 rounded-lg text-white bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
+                                <button class="w-32 mt-5 py-2 rounded-lg text-secondary bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700" name="">
                                     ابعرف خدماتكم !
                                 </button>
                             </a>
@@ -127,28 +133,79 @@
             <div class="container">
 
                 <!-- Main title -->
-                <h2 data-aos="flip-up" class="flex flex-row flex-nowrap items-center mb-16">
-                    <span class="flex-grow block border-t border-gray-500"></span>
-                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-black text-white text-center leading-8">
+                <h2 class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-light"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-gradient-to-l from-black to-third text-secondary text-center leading-7">
                         <span class="text-2xl">
                             خـدمـاتـنـا
                         </span>
                         <br>
-                        <span class="text-lg font-light">
+                        <span class="font-light lang-en">
                             Our services
                         </span>
                     </span>
-                    <span class="flex-grow block border-t border-gray-500"></span>
+                    <span class="flex-grow block border-t border-light"></span>
                 </h2>
 
 
                 <!-- Cards -->
-                <div class="grid gap-y-10 gap-x-5 grid-cols-1 lg:grid-cols-3">
+                <div class="row mt-16 grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
                     
-                    
+                    <div class="col flex flex-col gap-4 text-center border border-light hover:border-third duration-500 p-7 rounded-tr-3xl rounded-bl-3xl">
+                        <div class="icon flex justify-center">
+                            <img loading="lazy" src="./assets/images/image-gallery.png" alt="img" class="w-16 h-16">
+                        </div>
+                        <div class="title text-xl third-color font-medium">
+                            <h4>تصوير فوتوغرافي</h4>
+                        </div>
+                        <div class="text text-gray-400 leading-7">
+                            <p>
+                                توثيق الاحداث والفعاليات والاماكن والمنتجات وغيرها
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col flex flex-col gap-4 text-center border border-light hover:border-third duration-500 p-7 rounded-tr-3xl rounded-bl-3xl">
+                        <div class="icon flex justify-center">
+                            <img loading="lazy" src="./assets/images/image-gallery.png" alt="img" class="w-16 h-16">
+                        </div>
+                        <div class="title text-xl third-color font-medium">
+                            <h4>تصوير فوتوغرافي</h4>
+                        </div>
+                        <div class="text text-gray-400 leading-7">
+                            <p>
+                                توثيق الاحداث والفعاليات والاماكن والمنتجات وغيرها
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col flex flex-col gap-4 text-center border border-light hover:border-third duration-500 p-7 rounded-tr-3xl rounded-bl-3xl">
+                        <div class="icon flex justify-center">
+                            <img loading="lazy" src="./assets/images/image-gallery.png" alt="img" class="w-16 h-16">
+                        </div>
+                        <div class="title text-xl third-color font-medium">
+                            <h4>تصوير فوتوغرافي</h4>
+                        </div>
+                        <div class="text text-gray-400 leading-7">
+                            <p>
+                                توثيق الاحداث والفعاليات والاماكن والمنتجات وغيرها
+                            </p>
+                        </div>
+                    </div>
+
 
                 </div>
 
+                <!-- Button -->
+                <a href="https://wa.me/+201026053956" target="_blank" rel="noopener noreferrer" class="block w-fit mx-auto mt-5">
+                    <button
+                        class="w-32 mt-5 py-2 rounded-lg text-secondary bg-gradient-to-l from-third to-gray-900 hover:bg-transparent duration-300 border border-gray-900 hover:border-gray-700"
+                        name="">
+                        استفسر أكثر
+                    </button>
+                </a>
 
             </div>
         </section>
@@ -172,11 +229,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <!-- Start JS Files -->
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/main.js"></script>

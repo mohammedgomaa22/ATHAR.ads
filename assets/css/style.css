@@ -140,7 +140,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3c76fa;
+    background-color: #608BC1;
 }
 
 * {
@@ -155,7 +155,7 @@ html {
 
 @media(min-width: 1280px) {
     .container {
-        padding: 0.5rem 5rem;
+        padding: 0.5rem 10rem;
     }
 }
 
