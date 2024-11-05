@@ -66,56 +66,56 @@
 /* Arabic */
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/black.otf');
+    src: url('./fonts/black.otf');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/bold.otf');
+    src: url('./fonts/bold.otf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/semiBold.otf');
+    src: url('./fonts/semiBold.otf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/medium.otf');
+    src: url('./fonts/medium.otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/arabic.otf');
+    src: url('./fonts/arabic.otf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/light.otf');
+    src: url('./fonts/light.otf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/extraLight.otf');
+    src: url('./fonts/extraLight.otf');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'arabicFont';
-    src: url('./fonts/arabic/thin.otf');
+    src: url('./fonts/thin.otf');
     font-weight: 100;
     font-style: normal;
 }
@@ -159,6 +159,12 @@ html {
     }
 }
 
+
+/* ----------------- */
+
+.lang-en {
+    font-family: 'englishFont';
+}
 
 /* ----------------- */
 
