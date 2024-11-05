@@ -140,7 +140,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #608BC1;
+    background-color: #3c76fa;
 }
 
 * {
@@ -294,7 +294,7 @@ html {
     height: 28px;
     margin: 2px;
     border-radius: 0px;
-    background: #89aee3;
+    background: #3c76fa;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
