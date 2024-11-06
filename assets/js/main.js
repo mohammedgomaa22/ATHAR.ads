@@ -89,14 +89,17 @@ swiperJS();
 const openVideo = () => {
     const model = document.getElementById("model");
     const getVideo = document.querySelectorAll("[data-getVideo]");
-    // const setVideo = document.querySelector("[data-setVideo]");
+    const setVideo = document.querySelector("[data-setVideo]");
     document.querySelector("[data-close]").addEventListener("click", () => {
+        setVideo.pause();
+        setVideo.removeAttribute("src");
         model.style.display = "none";
     });
 
     getVideo.forEach((vid) => {
         vid.addEventListener("click", () => {
-            // setVideo.src = "";
+            setVideo.setAttribute("src", vid.getAttribute("src"));
+            setVideo.play();
             model.style.display = "flex";
         })
     })
