@@ -55,3 +55,51 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+// ********** Swiper Images **********
+const swiperJS = () => {
+    const swiper = new Swiper( '.swiper-container.two', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        effect: 'coverflow',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 0,
+            stretch: 100,
+            depth: 150,
+            modifier: 1.5,
+            slideShadows : false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }         
+    } );
+};
+swiperJS();
+
+// ***************************************************
+
+const openVideo = () => {
+    const model = document.getElementById("model");
+    const getVideo = document.querySelectorAll("[data-getVideo]");
+    // const setVideo = document.querySelector("[data-setVideo]");
+    document.querySelector("[data-close]").addEventListener("click", () => {
+        model.style.display = "none";
+    });
+
+    getVideo.forEach((vid) => {
+        vid.addEventListener("click", () => {
+            // setVideo.src = "";
+            model.style.display = "flex";
+        })
+    })
+    
+};
+openVideo();

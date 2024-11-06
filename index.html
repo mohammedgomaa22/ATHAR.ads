@@ -19,21 +19,23 @@
             theme: {
             extend: {
                 colors: {
-                    primary: '#003dff',
-                    secondary: '#464b51',
-                    third: '#3c76fa',
-                    light: '#89aee3',
+                    // primary: '#003dff',
+                    // secondary: '#464b51',
+                    // third: '#3c76fa',
+                    // light: '#89aee3',
                     // ------------------------------
-                    // primary: '#133E87',
-                    // secondary: '#F3F3E0',
-                    // third: '#608BC1',
-                    // light: '#CBDCEB',
+                    primary: '#133E87',
+                    secondary: '#F3F3E0',
+                    third: '#608BC1',
+                    light: '#CBDCEB',
                 }
             }
             }
         }
     </script>
     <!-- Link Swiper's CSS -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
@@ -42,7 +44,7 @@
 <body>
 
     <!-- ********** Preloader ********** -->
-    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-third to-white duration-1000">
+    <!-- <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-third to-white duration-1000">
         <div class="loader">
             <div class="loader-square"></div>
             <div class="loader-square"></div>
@@ -52,13 +54,28 @@
             <div class="loader-square"></div>
             <div class="loader-square"></div>
         </div>
-    </div>
+    </div> -->
     
+
+    <!--- Video Model --->
+    <div class="models hidden h-screen w-full justify-center items-center fixed top-0 left-0 z-[9999] bg-[#00000050]"
+        style="backdrop-filter: blur(5px);" id="model">
+        <div class="video h-[75%] w-[90%] relative flex items-center justify-center">
+            <button
+                class="close-video h-[30px] w-[30px] p-[3px] rounded-full text-[18px] absolute top-[10px] right-0 text-white cursor-pointer bg-red-500 z-10"
+                data-close>X</button>
+            <video class="max-w-full max-h-full rounded-lg" controls>
+                <source src="./assets/data/pro1/ALLAH PANO (Arabic).mp4" type="video/mp4" data-setVideo>
+            </video>
+        </div>
+    </div>
+
+
 
     <main>
 
         <!-- ********** Header ********** -->
-        <header class="min-h-screen md:pt-10 pb-40 md:pb-0 flex flex-col justify-center items-center relative bg-gradient-to-l from-third to-white">
+        <header class="min-h-screen md:pt-10 pb-40 md:pb-0 flex flex-col justify-center items-center relative bg-gradient-to-l from-black to-third">
             <figure class="hidden md:block w-56 md:w-60">
                 <img src="./assets/images/Logo-B.png" alt="Logo">
             </figure>
@@ -105,12 +122,12 @@
                         </p>
                         <div class="flex items-center gap-4">
                             <a href="https://wa.me/+201026053956" target="_blank" rel="noopener noreferrer" class="block mx-auto mt-5 lg:mx-0 w-fit">
-                                <button class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-primary to-third hover:bg-transparent duration-300 border border-third hover:border-light" name="">
+                                <button class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-third to-black hover:bg-transparent duration-300 border border-black hover:border-light" name="">
                                     احتاج فيديو
                                 </button>
                             </a>
                             <a href="#services" rel="noopener noreferrer" class="block mx-auto lg:mx-0 mt-5 w-fit">
-                                <button class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-primary to-third hover:bg-transparent duration-300 border border-third hover:border-light" name="">
+                                <button class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-third to-black hover:bg-transparent duration-300 border border-black hover:border-light" name="">
                                     ابعرف خدماتكم !
                                 </button>
                             </a>
@@ -127,15 +144,15 @@
             </div>
         </header>
 
+        
         <!-- Services -->
-
         <section id="services" class="py-16">
             <div class="container">
 
                 <!-- Main title -->
                 <h2 class="flex flex-row flex-nowrap items-center mb-16">
                     <span class="flex-grow block border-t border-light"></span>
-                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-gradient-to-l from-third to-light text-white text-center leading-7">
+                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-gradient-to-l from-black to-third text-secondary text-center leading-7">
                         <span class="text-2xl">
                             خـدمـاتـنـا
                         </span>
@@ -201,10 +218,52 @@
                 <!-- Button -->
                 <a href="https://wa.me/+201026053956" target="_blank" rel="noopener noreferrer" class="block w-fit mx-auto mt-10">
                     <button
-                        class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-third to-light hover:bg-transparent duration-300 border border-third hover:border-light" name="">
+                        class="w-32 py-2 rounded-lg text-white bg-gradient-to-l from-third to-black hover:bg-transparent duration-300 border border-black hover:border-light" name="">
                         استفسر أكثر
                     </button>
                 </a>
+
+            </div>
+        </section>
+        
+        <!-- Portfolio -->
+        <section id="portfolio" class="py-16">
+            <div class="container">
+
+                <!-- Main title -->
+                <h2 class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-light"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-gradient-to-l from-black to-third text-secondary text-center leading-7">
+                        <span class="text-2xl">
+                            أعمال من تنفيذنا
+                        </span>
+                        <br>
+                        <span class="font-light lang-en">
+                            Portfolio
+                        </span>
+                    </span>
+                    <span class="flex-grow block border-t border-light"></span>
+                </h2>
+
+
+                <!-- Swiper -->
+                <div class="swiper-container two">
+                    <div class="swiper-wrapper">
+                
+                        <div class="swiper-slide">
+                            <div class="slider-image">
+                                <img loading="lazy" src="./assets/images/test.jpg" alt="slide 1">
+                            </div>
+                        </div>
+                                        
+                        <div class="swiper-slide">
+                            <div class="slider-image">
+                                <img loading="lazy" src="./assets/images/test.jpg" alt="slide 1">
+                            </div>
+                        </div>
+                                        
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -216,18 +275,21 @@
 
     <!-- ********** Start Footer ********** -->
     <footer class="">
-        <div class="foot px-5 py-4 text-sm text-secondary bg-gradient-to-l from-third to-white">
+        <div class="foot px-5 py-4 text-sm text-white bg-gradient-to-l from-black to-third">
             <p class="w-fit mx-auto">جميع الحقوق محفوظة لموقع ATHAR.ads 2024</p>
         </div>
     </footer>
     <!-- ********** End Footer ********** -->
     
 
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+
+    <!-- Swiper -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Start JS Files -->
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/main.js"></script>
