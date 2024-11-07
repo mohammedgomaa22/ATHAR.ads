@@ -43,8 +43,8 @@
 </head>
 <body>
 
-    <!-- ********** Preloader ********** -->
-    <!-- <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-third to-white duration-1000">
+    <!-- Preloader -->
+    <div id="preloader" class="h-screen w-screen flex items-center justify-center z-50 fixed top-0 right-0 bg-gradient-to-l from-third to-white duration-1000">
         <div class="loader">
             <div class="loader-square"></div>
             <div class="loader-square"></div>
@@ -54,7 +54,7 @@
             <div class="loader-square"></div>
             <div class="loader-square"></div>
         </div>
-    </div> -->
+    </div>
     
 
     <!--- Video Model --->
@@ -71,7 +71,7 @@
 
     <main>
 
-        <!-- ********** Header ********** -->
+        <!-- Header -->
         <header class="min-h-screen md:pt-10 pb-40 md:pb-0 flex flex-col justify-center items-center relative bg-gradient-to-l from-black to-third">
             <figure class="hidden md:block w-56 md:w-60">
                 <img src="./assets/images/Logo-B.png" alt="Logo">
@@ -248,26 +248,26 @@
                     <div class="swiper-wrapper">
                                                         
                         <div class="swiper-slide">
-                            <div class="slider-video h-full">
+                            <div class="slider-video h-full relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
                                 <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="" playsinline data-getVideo>
                                 </video>
                             </div>
                         </div>
-                                        
+                                                                                
                         <div class="swiper-slide">
-                            <div class="slider-video h-full">
+                            <div class="slider-video h-full relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
                                 <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="" playsinline data-getVideo>
                                 </video>
                             </div>
                         </div>
-                                        
+                                                                                
                         <div class="swiper-slide">
-                            <div class="slider-video h-full">
+                            <div class="slider-video h-full relative before:content[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:h-14 before:w-14 before:bg-contain before:bg-center before:rounded-full">
                                 <video src="./assets/videos/test.mp4" type="video/mp4" class="video-cover rounded-2xl h-full" poster="" playsinline data-getVideo>
                                 </video>
                             </div>
                         </div>
-                                        
+                                                                                
                                         
                     </div>
                 </div>
@@ -275,25 +275,63 @@
             </div>
         </section>
         
+        <!-- Contact -->
+        <section id="contact-us" class="py-16">
+            <div class="container">
+
+                <!-- Main title -->
+                <h2 class="flex flex-row flex-nowrap items-center mb-16">
+                    <span class="flex-grow block border-t border-light"></span>
+                    <span class="flex-none block mx-4 px-4 py-2.5 rounded font-medium bg-gradient-to-l from-black to-third text-secondary text-center leading-7">
+                        <span class="text-2xl">
+                            تواصل معنا
+                        </span>
+                        <br>
+                        <span class="font-light">
+                            سنقوم بالتواصل معك في أقرب وقت
+                        </span>
+                    </span>
+                    <span class="flex-grow block border-t border-light"></span>
+                </h2>
+
+                <!-- Form -->
+                <form class="form p-5 md:p-5 rounded-xl shadow flex-1 duration-500 md:max-w-[600px] mx-auto border">
+                    <input type="text" id="name" name="name" placeholder="اسم الجهه" class="w-full p-2 mb-3 outline-none text-[#3A3939] bg-gray-50 border rounded-md focus:shadow duration-300" required />
+                    <input type="number" id="phone" name="phone" placeholder="رقم التواصل" class="w-full p-2 mb-3 outline-none text-[#3A3939] bg-gray-50 border rounded-md focus:shadow duration-300" required />
+                    <textarea rows="4" name="message" id="message" placeholder="اترك رسالتك" class="w-full p-2 mb-3 outline-none text-[#3A3939] bg-gray-50 border rounded-md focus:shadow duration-300"></textarea>
+                        
+            
+                    <button type="submit" onclick="" class="w-full bg-gradient-to-l from-third to-black text-white mt-3 rounded duration-300 border px-3 py-2 mx-auto cursor-pointer">إرسال</button>
+                </form>
+
+                <!-- Whatsapp -->
+                <div class="whatsapp mt-10">
+                    <a href="https://wa.me/+201026053956" target="_blank"
+                        class="flex items-center gap-2 w-fit mx-auto text-xl font-normal mt-3 py-2 px-4 rounded-full bg-third text-white lang-en">
+                        ! Whatsapp
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                    </a>
+                </div>
+
+
+            </div>
+            
         
+        </section>
 
 
     </main>
 
-    <!-- ********** Start Footer ********** -->
-    <footer class="">
-        <div class="foot px-5 py-4 text-sm text-white bg-gradient-to-l from-black to-third">
+    <!-- Footer -->
+    <footer>
+        <div class="copyright px-5 py-4 text-sm text-white bg-gradient-to-l from-black to-third">
             <p class="w-fit mx-auto">جميع الحقوق محفوظة لموقع ATHAR.ads 2024</p>
         </div>
     </footer>
-    <!-- ********** End Footer ********** -->
     
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    
-
-    <!-- Swiper -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
